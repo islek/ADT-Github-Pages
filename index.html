@@ -1,58 +1,593 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>IceMe - Dégustez une glace, maintenant !</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="robots" content="noindex">
+
+    <title>SingleCar - Drive, Meet & Love</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
+
+
   <body>
 
-    <h1>IceMe</h1>
-    <h2>Dégustez une glace</h2>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="img/logo.jpg">
+          </a>
+            <p class="navbar-text">SingleCar</p>
+        </div>
+      
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <button type="button" class="btn btn-default navbar-btn">Proposer un trajet</button>
+            </li>
+            <li>
+              <a href="https://twitter.com/SingleCarFR" target="blank"> <i class="fa fa-twitter-square fa-2x"></i> </a>
+            </li>
+            <li>
+              <a href="href="https://www.facebook.com/SingleCar-1784142331823959" target="blank"> <i class="fa fa-facebook-square fa-2x"></i> </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/singlecar.fr/?hl=fr" target="blank"> <i class="fa fa-instagram fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/u/0/105973584061581231778" target="blank"> <i class="fa fa-google-plus-square fa-2x"></i> </a>
+            </li>
+            <li>
+              <button type="button" class="btn btn-default navbar-btn">Inscription</button>
+            </li>
+            <li>
+              <a href="#">Connexion</a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
-    <img src="images/icon_57707/icon_57707.png" width="48">
-    <p>
-      Choisissez jusque trois parfums
-      parmi notre catalogue de <strong>1000</strong> glaces maison.
-    </p>
+    <div class="wrapper">
+        <div class="lead">
+          <h1>SingleCar</h1>
+          <h2>Drive, Meet & Love</h2>
+          <h3>Prêt pour l'aventure ? Embarquez maintenant !</h3>
+        </div>
+        <div class="row" id="search">
+          <div class="col-lg-3 col-lg-offset-1">
+            <div class="input-group">
+              <button type="button" class="btn btn-default btn-sm border">
+                <input type="text" class="form-control" placeholder="Départ">
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="input-group">
+              <button type="button" class="btn btn-default btn-sm border">
+                <input type="text" class="form-control" placeholder="Arrivée">
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="input-group">
+              <button type="button" class="btn btn-default btn-sm border">
+              <input type="text" class="form-control" placeholder="Date">
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-1">
+            <button type="button" class="btn btn-default btn-lg btn-red">
+              <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span> Go
+            </button>
+          </div>
+        </div><!-- /.row -->
+    </div>
 
-    <img src="images/icon_29388/icon_29388.png" width="48">
-    <p>
-      L'application vous <strong>géolocalise</strong> automatiquement et vous
-      indique le temps d'attente estimé.
-    </p>
+    <!-- Profiles title background control -->
+    <div class="profile0 text-center">
+      <h3>Les coups de coeur</h3>
+    </div>
 
-    <img src="images/icon_24755/icon_24755.png" width="48">
-    <p>
-      Un de nos supers livreurs fonce pour vous apporter votre glace,
-      qui sera <strong>préparée juste à temps</strong>.
-    </p>
+    <!-- Profiles line 1 -->
+    <div class="profile1">
+      <div class="row">
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+            <img src="img/avatar_w.jpg" alt="Avatar" class="avatar">
+            <div class="caption">
+              <div class="cta-profile">
+                <div class="cta-text">
+                  <a href="#" class="btn btn-primary btn-green" role="button">Découvrir le profil</a>
+                </div>
+              </div>
+              <p>Emilie</p>
+              <p>23 ans</p>
+              <p>Avignon</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+          <img src="img/avatar_m.jpg" alt="Avatar" class="avatar">
+            <div class="caption">
+              <div class="cta-profile">
+                <div class="cta-text">
+                  <a href="#" class="btn btn-primary btn-green" role="button">Découvrir le profil</a>
+                </div>
+              </div>
+              <p>Tony</p>
+              <p>33 ans</p>
+              <p>Metz</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+          <img src="img/avatar_w.jpg" alt="Avatar" class="avatar">
+            <div class="caption">
+              <div class="cta-profile">
+                <div class="cta-text">
+                  <a href="#" class="btn btn-primary btn-green" role="button">Découvrir le profil</a>
+                </div>
+              </div>
+              <p>Hélène</p>
+              <p>18 ans</p>
+              <p>Cachan</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+          <img src="img/avatar_m.jpg" alt="Avatar" class="avatar">
+            <div class="caption">
+              <div class="cta-profile">
+                <div class="cta-text">
+                  <a href="#" class="btn btn-primary btn-green" role="button">Découvrir le profil</a>
+                </div>
+              </div>
+              <p>Nicolas</p>
+              <p>45 ans</p>
+              <p>Lille</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+          <img src="img/avatar_w.jpg" alt="Avatar" class="avatar">
+            <div class="caption">
+              <div class="cta-profile">
+                <div class="cta-text">
+                  <a href="#" class="btn btn-primary btn-green" role="button">Découvrir le profil</a>
+                </div>
+              </div>
+              <p>Cassandra</p>
+              <p>25 ans</p>
+              <p>Paris</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+          <img src="img/avatar_m.jpg" alt="Avatar" class="avatar">
+            <div class="caption">
+              <div class="cta-profile">
+                <div class="cta-text">
+                  <a href="#" class="btn btn-primary btn-green" role="button">Découvrir le profil</a>
+                </div>
+              </div>
+              <p>Ibrahim</p>
+              <p>28 ans</p>
+              <p>Marseille</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <img src="images/icon_17805/icon_17805.png" width="48">
-    <p>
-      Pas de monnaie ? Pas un problème, le paiement est <strong>automatiquement</strong>
-      débité sur votre carte bancaire.
-    </p>
+    <!-- Profiles line 2 -->
+    <div class="profile1">
+      <div class="row">
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+          <img src="img/avatar_m.jpg" alt="Avatar" class="avatar">
+            <div class="caption">
+              <div class="cta-profile">
+                <div class="cta-text">
+                  <a href="#" class="btn btn-primary btn-green" role="button">Découvrir le profil</a>
+                </div>
+              </div>
+              <p>Renaud</p>
+              <p>31 ans</p>
+              <p>Bordeaux</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+          <img src="img/avatar_w.jpg" alt="Avatar" class="avatar">
+            <div class="caption">
+              <div class="cta-profile">
+                <div class="cta-text">
+                  <a href="#" class="btn btn-primary btn-green" role="button">Découvrir le profil</a>
+                </div>
+              </div>
+              <p>Bella</p>
+              <p>24 ans</p>
+              <p>Nantes</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+          <img src="img/avatar_m.jpg" alt="Avatar" class="avatar">
+            <div class="caption">
+              <div class="cta-profile">
+                <div class="cta-text">
+                  <a href="#" class="btn btn-primary btn-green" role="button">Découvrir le profil</a>
+                </div>
+              </div>
+              <p>Daniel</p>
+              <p>41 ans</p>
+              <p>Lens</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+          <img src="img/avatar_w.jpg" alt="Avatar" class="avatar">
+            <div class="caption">
+              <div class="cta-profile">
+                <div class="cta-text">
+                  <a href="#" class="btn btn-primary btn-green" role="button">Découvrir le profil</a>
+                </div>
+              </div>
+              <p>Fiona</p>
+              <p>29 ans</p>
+              <p>Cergy</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+          <img src="img/avatar_m.jpg" alt="Avatar" class="avatar">
+            <div class="caption">
+              <div class="cta-profile">
+                <div class="cta-text">
+                  <a href="#" class="btn btn-primary btn-green" role="button">Découvrir le profil</a>
+                </div>
+              </div>
+              <p>Kendji</p>
+              <p>19 ans</p>
+              <p>Strasbourg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+          <img src="img/avatar_w.jpg" alt="Avatar" class="avatar">
+            <div class="caption">
+              <div class="cta-profile">
+                <div class="cta-text">
+                  <a href="#" class="btn btn-primary btn-green" role="button">Découvrir le profil</a>
+                </div>
+              </div>
+              <p>Elisa</p>
+              <p>38 ans</p>
+              <p>Nice</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>      
 
-    <h3>Suivez-nous</h3>
-    <ul>
-      <li>
-        <a href="https://twitter.com/iceme">Twitter</a>
-      </li>
-      <li>
-        <a href="https://facebook.com/iceme">Facebook</a>
-      </li>
-      <li>
-        <a href="https://instagram.com/iceme">Instagram</a>
-      </li>
-      <li>
-        <a href="https://youtube.com/iceme">Youtube</a>
-      </li>
-    </ul>
+    <div class="pitch text-center">
+      <h3>SingleCar en quelques mots</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <div class="feature">
+                <img src="img/icon_962077_cc/noun_962077_ccc.png" width="96">
+                <p class="bold">Le covoiturage 100% célibataire</p>
+                <p>
+                  SingleCar, premier concept de covoiturage 100% <strong>célibataire</strong>. Rencontrez-vous dans la vraie vie !
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="feature">
+                <img src="img/icon_842354_cc/noun_842354_ccc.png" width="96">
+                <p class="bold">Voyagez en toute confiance</p>
+                <p>
+                  Grace à une sélection rigoureuse de nos <strong>membres</strong> et un niveau de vérification élevé : 7 critères.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="feature">
+                <img src="img/icon_988194_cc/noun_988194_ccc.png" width="96">
+                <p class="bold">Paiement 100% sécurisé</p>
+                <p>
+                  Echange <strong>monétaire</strong> sur plateforme virtuelle.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="feature">
+                <img src="img/icon_1015298_cc/noun_1015298_ccc.png" width="96">
+                <p class="bold">Des rencontres plus concrètes</p>
+                <p>
+                  Rencontrez vous dans la vraie vie grace au <strong>covoiturage</strong> et terminé les heures sur les sites de rencontre, place au concret et au réel.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <p>
-      IceMe est une compagnie fictive créée dans le cadre de <a href="http://cetetejecode.fr">cetetejecode</a>.
-    </p>
+    <div id="panorama">
+      <div class="vitry">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="cachan">
+                <img src="img/icon_noun_509406_cc/noun_509406_ccc.png" width="96">
+                <h3>Conducteur ?</h3>
+                <p>Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus pastus multa huius modi scrutabatur. quae singula narrare non refert, me professione modum, quod evitandum est, excedamus.Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus pastus multa huius modi scrutabatur. quae singula narrare non refert, me professione modum, quod evitandum est, excedamus.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg btn-red" data-toggle="modal" data-target="#modal1">
+                En route !
+                </button>  
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content chevilly">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">En route</h4>
+                    </div>
+                    <div class="modal-body lhay">
+                      <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogatus multa coactusque mentiri, miraberis numquam antea visus summatem virum tenuem te sic enixius observantem, ut paeniteat ob haec bona tamquam praecipua non vidisse ante decennium Romam.
+                      Metuentes igitur idem latrones Lycaoniam magna parte campestrem cum se inpares nostris fore congressione stataria documentis frequentibus scirent, tramitibus deviis petivere Pamphyliam diu quidem intactam sed timore populationum et caedium, milite per omnia diffuso propinqua, magnis undique praesidiis conmunitam.
+                      Alii summum decus in carruchis solito altioribus et ambitioso vestium cultu ponentes sudant sub ponderibus lacernarum, quas in collis insertas cingulis ipsis adnectunt nimia subtegminum tenuitate perflabiles, expandentes eas crebris agitationibus maximeque sinistra, ut longiores fimbriae tunicaeque perspicue luceant varietate liciorum effigiatae in species animalium multiformes.<p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                      <button type="button" class="btn btn-primary">En savoir plus</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="cachan">
+              <img src="img/icon_noun_1353_cc/noun_1353_ccc.png" width="96">
+              <h3>Passager ?</h3>
+              <p>Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus pastus multa huius modi scrutabatur. quae singula narrare non refert, me professione modum, quod evitandum est, excedamus.Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus pastus multa huius modi scrutabatur. quae singula narrare non refert, me professione modum, quod evitandum est, excedamus.</p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary btn-lg btn-red" data-toggle="modal" data-target="#modal2">
+              Embarquez maintenant !
+              </button>
+              </div>        
+              <!-- Modal -->
+              <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content chevilly">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">Embarquez maintenant !</h4>
+                    </div>
+                    <div class="modal-body lhay">
+                      <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogatus multa coactusque mentiri, miraberis numquam antea visus summatem virum tenuem te sic enixius observantem, ut paeniteat ob haec bona tamquam praecipua non vidisse ante decennium Romam.
+                      Metuentes igitur idem latrones Lycaoniam magna parte campestrem cum se inpares nostris fore congressione stataria documentis frequentibus scirent, tramitibus deviis petivere Pamphyliam diu quidem intactam sed timore populationum et caedium, milite per omnia diffuso propinqua, magnis undique praesidiis conmunitam.
+                      Alii summum decus in carruchis solito altioribus et ambitioso vestium cultu ponentes sudant sub ponderibus lacernarum, quas in collis insertas cingulis ipsis adnectunt nimia subtegminum tenuitate perflabiles, expandentes eas crebris agitationibus maximeque sinistra, ut longiores fimbriae tunicaeque perspicue luceant varietate liciorum effigiatae in species animalium multiformes.<p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                      <button type="button" class="btn btn-primary">En savoir plus</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="layout-blog text-center">
+    <h3>Les derniers articles du blog</h3>
+      <div class="jumbotron back-white">
+        <div class="col-container container row">
+          <div class="col col-sm-8 col-md-4">
+            <h4>Titre de l'article</h4>
+            <img src="img/article1.jpg">
+            <p>Illud tamen clausos vehementer angebat quod captis navigiis, quae frumenta vehebant per flumen, Isauri quidem alimentorum copiis adfluebant, ipsi vero solitarum rerum cibos iam consumendo inediae propinquantis aerumnas exitialis horrebant.</p>
+            <button type="button" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Lire la suite sur le blog
+            </button>
+          </div>
+          <div class="col col-sm-8 col-md-4">
+            <h4>Titre de l'article</h4>
+            <img src="img/article2.jpg">
+            <p>Illud tamen clausos vehementer angebat quod captis navigiis, quae frumenta vehebant per flumen, Isauri quidem alimentorum copiis adfluebant, ipsi vero solitarum rerum cibos iam consumendo inediae propinquantis aerumnas exitialis horrebant.</p>
+            <button type="button" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Lire la suite sur le blog
+            </button>
+          </div>
+          <div class="col col-sm-8 col-md-4">
+            <h4>Titre de l'article</h4>
+            <img src="img/article3.jpg">
+            <p>Illud tamen clausos vehementer angebat quod captis navigiis, quae frumenta vehebant per flumen, Isauri quidem alimentorum copiis adfluebant, ipsi vero solitarum rerum cibos iam consumendo inediae propinquantis aerumnas exitialis horrebant.</p>
+            <button type="button" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Lire la suite sur le blog
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <p>Informations pratiques</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#" target="blank">Comment ça marche</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">Voyagez en toute confiance</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">Prix du covoiturage</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">Charte du bon célibataire</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <p>A propos</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#" target="blank">Qui sommes-nous ?</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">.....</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">On recrute</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">Espace partenaire</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">......</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <p>Informations légales</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#" target="blank">CGU</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">CGV</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">Cookies</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">Politique de confidentialité</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">Mentions légales</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <p>Suivez-nous</p>
+            <ul class="list-inline social text-center">
+              <li>
+                <a href="https://www.facebook.com/SingleCar-1784142331823959/" target="blank"> 
+                <i class="fa fa-facebook-square fa-2x"></i> 
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/SingleCarFR" target="blank"> 
+                <i class="fa fa-twitter-square fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/singlecar.fr/?hl=fr" target="blank"> 
+                <i class="fa fa-instagram fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/u/0/105973584061581231778" target="blank"> 
+                <i class="fa fa-google-plus-square fa-2x"></i> 
+                </a>
+              </li>
+            </ul>
+            <img src="img/logo_footer.jpg" class="img-responsive center-block">
+            <p class="app">Téléchargez l'app</p>
+            <ul class="list-inline social text-center">
+              <li>
+                <a> 
+                <i class="fa fa-apple fa-2x" aria-hidden="true"></i> 
+                </a>
+              </li>
+              <li>
+                <a> 
+                <i class="fa fa-android fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a> 
+                <i class="fa fa-windows fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Mouse for top page  -->
+    <button onclick="topFunction()" id="mouse" title="Haut de page">
+    <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("mouse").style.display = "block";
+        } else {
+            document.getElementById("mouse").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
   </body>
 </html>
