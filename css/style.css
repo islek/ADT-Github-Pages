@@ -1,5 +1,5 @@
 body {
-	padding-top: 7px;
+	padding-top: 60px;
 	background-color: #fff;
 	overflow-x:hidden;
 }
@@ -22,6 +22,15 @@ body {
 	font-family: 'Arial';
 	font-size: 22px;
 	color: yellow;
+}
+
+.navbar-nav .roundedImage {
+	overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:30px;
+    height:30px;
 }
 
 /* How to override the default Bootstrap navbar */
@@ -88,6 +97,20 @@ body {
     position: relative;
     width: 100%;
 }
+
+/* Footer section control */
+
+#footer p {
+	font-size: 1.5em;
+	font-style: bold;
+	text-align: center;
+}
+
+#footer img {
+	display: center;
+}
+
+/* index.html */
 
 /* Wrapper section control */
 
@@ -305,14 +328,164 @@ body {
     }
 }
 
-/* Footer section control */
+/* profile.html */
 
-#footer p {
-	font-size: 1.5em;
-	font-style: bold;
+/* Couv section control */
+
+#couv {
+	padding-top: 2px;
+}
+
+.next-trip, .status {
+	height: 217px;
+	padding: 15% 5%;
+}
+
+.trajet {
+	border: 1px solid grey;
+	border-radius: 10px;
+}
+
+.online {
+	color : #217A39;
+}
+
+.offline {
+	color : #C70F14;
+}
+
+.next-trip caption, th, td {
 	text-align: center;
 }
 
-#footer img {
-	display: center;
+.couv-img {
+  background: rgba(25, 0, 0, 0.5);/*visible only in contain mode*/
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.couv-img img {
+  display: block;
+
+  /*contain:*/
+  /*max-height: 100%;
+  max-width: 100%;*/
+  /*--*/
+
+  /*cover (not work for images wider and shorter than the container):*/
+  min-height: 100%;
+  width: 100%;
+
+  /*--*/
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.couv-cta {
+	background: #fff;
+	height:34px;
+}
+
+/* Layout-profile section control */
+
+#layout-profile {
+	padding-top: 2px;
+}
+
+.photo-profile {
+	height:200px;
+}
+
+.photo-profile img {
+	display: block;
+
+  max-height: 100%;
+  max-width: 100%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.perso-profile, .feature-profile {
+	height: 100px;
+}
+
+.prgs {
+	margin-top: 10px;
+}
+
+.feature-profile td {
+	border: 1px solid grey;
+	border-radius: 10px;
+	padding : 2px;
+}
+
+.feature-profile table
+{
+    border-collapse: separate;
+    border-spacing : 5px;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#my-profile {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#my-profile:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 40%;
+    max-width: 700px;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 80px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }

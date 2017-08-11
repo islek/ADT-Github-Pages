@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="robots" content="noindex">
+
+    <title>Profil | SingleCar</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+  <body>
+
+  <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="img/logo.jpg">
+          </a>
+            <p class="navbar-text">SingleCar</p>
+            <button type="button" class="btn btn-default navbar-btn">Rechercher un trajet</button>
+            <button type="button" class="btn btn-default navbar-btn">Proposer un trajet</button>
+        </div>
+      
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <button type="button" class="btn btn-default navbar-btn">Rechercher un célibataire</button>
+            </li>
+            <li>
+              <a href="#"> 
+              <i style="font-size:1.5em;" class="fa fa-car" aria-hidden="true"></i> Invitations
+              </a>
+            </li>
+            <li>
+              <a href="#"> 
+              <span style="font-size:1.5em;" class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true"></span> Messages
+              </a>
+            </li>
+            <li>
+              <a href="#"> 
+              <span style="font-size:1.5em;" class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span> Favoris
+              </a>
+            </li>
+            <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/avatar_w.jpg" alt="Avatar" class="roundedImage"> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a>Pseudo</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Profil</a></li>
+            <li><a href="#">Tableau de bord</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Mes trajets</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Obtenir un pass</a></li>
+          </ul>
+          </li>     
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+  <div id="couv">
+    <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-2 col-md-3">
+            <div class="next-trip">
+            <p>Ses prochains trajets</p>
+              <div class="trajet">
+              <table class="table table-condensed">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Départ</th>
+                    <th>Arrivée</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>jj/mm/aaaa</td>
+                    <td>Paris</td>
+                    <td>Bruxelles</td>
+                  </tr>
+                   <tr>
+                    <td>jj/mm/aaaa</td>
+                    <td>Lyon</td>
+                    <td>Marseille</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" class="btn btn-default btn-sm border btn-green">Rejoindre un trajet</button>
+              </div>
+            </div>
+            <div class="status">
+              <p>Pseudo</p>
+              <p><i class="fa fa-dot-circle-o online"></i> En ligne <i class="fa fa-dot-circle-o offline"></i> Hors ligne</p>
+              <p>Age</p>
+              <p>Ville</p>
+              <p>Pays</p>
+            </div>
+          </div>
+          <div class="col-sm-10 col-md-9">
+             <div class="couv-img">
+              <img src="img/couv.jpg">
+            </div>
+            <div class="couv-cta">
+            <a href="#" class="btn btn-primary btn-green" role="button"><i style="font-size:1em;" class="fa fa-car" aria-hidden="true"></i> Inviter sur un trajet</a>
+            <a href="#" class="btn btn-primary btn-green" role="button"><span style="font-size:1em;" class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span> Ajouter aux favoris</a>
+            <a href="#" class="btn btn-primary btn-green" role="button"><span style="font-size:1em;" class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true"></span> Envoyer un message</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="layout-profile">
+    <div class="row">
+        <div class="col-sm-2 col-md-3">
+          <div class="photo-profile">
+            <!-- Trigger the Modal -->
+            <img id="my-profile" src="img/avatar_w.jpg">
+
+            <!-- The Modal -->
+            <div id="my-modal" class="modal">
+
+              <!-- The Close Button -->
+              <span class="close" onclick="document.getElementById('my-modal').style.display='none'">&times;</span>
+
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+
+              
+            </div>
+          </div>
+          </div>
+        <div class="col-sm-10 col-md-9">
+          <div class="perso-profile text-center">
+            <p class="prgs">Biographie - Une ligne</p>
+              <ul class="list-inline check">
+                <li class="e-mail"><i class="fa fa-check-square-o online"></i> E-mail</li>
+                <li class="tel-num"><i class="fa fa-check-square-o online"></i> Téléphone</li>
+                <li class="id-card"><i class="fa fa-check-square-o online"></i> CNI</li>
+                <li class="facebook-sync"><i class="fa fa-check-square-o online"></i> Facebook</li>
+                <li class="licence-check"><i class="fa fa-check-square-o online"></i> Permis</li>
+                <li class="photo-check"><i class="fa fa-check-square-o online"></i> Photo vérifiée</li>
+                <li class="plates-check"><i class="fa fa-check-square-o online"></i> Immatriculation</li>
+              </ul>
+              <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%;height: 30px;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              Profil vérifié à 100%
+              </div>
+              </div>
+          </div>
+          <div class="feature-profile">
+          <p>Caractéristiques principales</p>
+          <table>
+             <tr>
+                 <td>Taille</td>
+                 <td>Silhouette</td>
+                 <td>Religion</td>
+                 <td>Yeux</td>
+                 <td>Style vestimentaire</td>
+                 <td>Taille cheveux</td>
+                 <td>Alcool</td>
+                 <td>Profession</td>
+             </tr>
+             <tr>
+                 <td>Yeux</td>
+                 <td>Poids</td>
+                 <td>Nationalité</td>
+                 <td>Autre</td>
+                 <td>Origines ethniques</td>
+                 <td>Couleurs cheveux</td>
+                 <td>Tabac</td>
+                 <td>Niveaux d'études</td>
+             </tr>
+          </table>
+          </div>
+        </div>
+  </div>
+
+  <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <p>Informations pratiques</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#" target="blank">Comment ça marche</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">Voyagez en toute confiance</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">Prix du covoiturage</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">Charte du bon célibataire</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <p>A propos</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#" target="blank">Qui sommes-nous ?</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">.....</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">On recrute</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">Espace partenaire</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">......</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <p>Informations légales</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#" target="blank">CGU</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">CGV</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">Cookies</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">Politique de confidentialité</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="blank">Mentions légales</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <p>Suivez-nous</p>
+            <ul class="list-inline social text-center">
+              <li>
+                <a href="https://www.facebook.com/SingleCar-1784142331823959/" target="blank"> 
+                <i class="fa fa-facebook-square fa-2x"></i> 
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/SingleCarFR" target="blank"> 
+                <i class="fa fa-twitter-square fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/singlecar.fr/?hl=fr" target="blank"> 
+                <i class="fa fa-instagram fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/u/0/105973584061581231778" target="blank"> 
+                <i class="fa fa-google-plus-square fa-2x"></i> 
+                </a>
+              </li>
+            </ul>
+            <img src="img/logo_footer.jpg" class="img-responsive center-block">
+            <p class="app">Téléchargez l'app</p>
+            <ul class="list-inline social text-center">
+              <li>
+                <a> 
+                <i class="fa fa-apple fa-2x" aria-hidden="true"></i> 
+                </a>
+              </li>
+              <li>
+                <a> 
+                <i class="fa fa-android fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a> 
+                <i class="fa fa-windows fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Mouse for top page  -->
+    <button onclick="topFunction()" id="mouse" title="Haut de page">
+    <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("mouse").style.display = "block";
+        } else {
+            document.getElementById("mouse").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    // Get the modal
+var modal = document.getElementById('my-modal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('my-profile');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
