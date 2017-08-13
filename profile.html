@@ -80,62 +80,9 @@
 
   <div id="couv">
     <div class="container text-center">
-        <div class="row">
-          <div class="col-sm-2 col-md-3">
-            <div class="next-trip">
-            <p>Ses prochains trajets</p>
-              <div class="trajet">
-              <table class="table table-condensed">
-                <thead>
-                  <tr>
-                    <th>Date</th>
-                    <th>Départ</th>
-                    <th>Arrivée</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>jj/mm/aaaa</td>
-                    <td>Paris</td>
-                    <td>Bruxelles</td>
-                  </tr>
-                   <tr>
-                    <td>jj/mm/aaaa</td>
-                    <td>Lyon</td>
-                    <td>Marseille</td>
-                  </tr>
-                </tbody>
-              </table>
-              <button type="button" class="btn btn-default btn-sm border btn-green">Rejoindre un trajet</button>
-              </div>
-            </div>
-            <div class="status">
-              <p>Pseudo</p>
-              <p><i class="fa fa-dot-circle-o online"></i> En ligne <i class="fa fa-dot-circle-o offline"></i> Hors ligne</p>
-              <p>Age</p>
-              <p>Ville</p>
-              <p>Pays</p>
-            </div>
-          </div>
-          <div class="col-sm-10 col-md-9">
-             <div class="couv-img">
-              <img src="img/couv.jpg">
-            </div>
-            <div class="couv-cta">
-            <a href="#" class="btn btn-primary btn-green" role="button"><i style="font-size:1em;" class="fa fa-car" aria-hidden="true"></i> Inviter sur un trajet</a>
-            <a href="#" class="btn btn-primary btn-green" role="button"><span style="font-size:1em;" class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span> Ajouter aux favoris</a>
-            <a href="#" class="btn btn-primary btn-green" role="button"><span style="font-size:1em;" class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true"></span> Envoyer un message</a>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div id="layout-profile">
-    <div class="row">
-        <div class="col-sm-2 col-md-3">
-          <div class="photo-profile">
+        <div class="row row-no-padding">
+          <div class="col-sm-2 col-md-3 nopadmar">
+              <div class="photo-profile">
             <!-- Trigger the Modal -->
             <img id="my-profile" src="img/avatar_w.jpg">
 
@@ -150,25 +97,159 @@
 
               
             </div>
-          </div>
-          </div>
-        <div class="col-sm-10 col-md-9">
-          <div class="perso-profile text-center">
-            <p class="prgs">Biographie - Une ligne</p>
-              <ul class="list-inline check">
-                <li class="e-mail"><i class="fa fa-check-square-o online"></i> E-mail</li>
-                <li class="tel-num"><i class="fa fa-check-square-o online"></i> Téléphone</li>
-                <li class="id-card"><i class="fa fa-check-square-o online"></i> CNI</li>
-                <li class="facebook-sync"><i class="fa fa-check-square-o online"></i> Facebook</li>
-                <li class="licence-check"><i class="fa fa-check-square-o online"></i> Permis</li>
-                <li class="photo-check"><i class="fa fa-check-square-o online"></i> Photo vérifiée</li>
-                <li class="plates-check"><i class="fa fa-check-square-o online"></i> Immatriculation</li>
+              
+              </div>
+            <div class="status">
+              <ul class="list-inline">
+                <li><span class="badge badge-secondary red">Pseudo</span></li>
+                <li>Age</li>
+                <li><i class="fa fa-dot-circle-o online"></i> En ligne</li>
               </ul>
+              <ul class="list-inline">
+                <li>Ville</li>
+                <li>Pays</li>
+                <li><i class="fa fa-dot-circle-o offline"></i> Hors ligne</li>
+              </ul>
+            </div>
+          
+          <div class="perso-profile perso-profile-tab">
+              <table class="perso-profile-border">
+             <tr>
+                 <td class="e-mail"> <i class="fa fa-check-square-o check"></i> E-mail</td>
+                 <td class="tel-num"><i class="fa fa-check-square-o check"></i> Téléphone</td>
+             </tr>
+             <tr>
+                 <td class="id-card"><i class="fa fa-check-square-o check"></i> CNI</td>
+                 <td class="facebook-sync"><i class="fa fa-check-square-o check"></i> Facebook</td>
+             </tr>
+             <tr>
+                 <td class="licence-check"><i class="fa fa-check-square-o check"></i> Permis</td>
+                 <td class="photo-check"><i class="fa fa-check-square-o check"></i> Immatriculation</td>
+             </tr>
+          </table>
+              
               <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 100%;height: 30px;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
               Profil vérifié à 100%
               </div>
               </div>
+          </div>
+          </div>
+          <div class="col-sm-0 col-md-1 nopadmar"> 
+            <div class="row row-1">
+            <div class="col-sm-1 col-md-1">
+              <div class="column column-1">
+                <img src="img/photo1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+              </div>
+              </div>
+            </div>
+            <div class="row row-1">
+            <div class="col-sm-1 col-md-1 ">
+              <div class="column column-1">
+                <img src="img/photo2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+              </div>
+              </div>
+            </div>
+            <div class="row row-1">
+            <div class="col-sm-1 col-md-1 ">
+              <div class="column column-1">
+                <img src="img/photo3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+              </div>
+              </div>
+            </div>
+            <div class="row row-1">
+            <div class="col-sm-1 col-md-1 ">
+              <div class="column column-1">
+                <img src="img/photo4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+              </div>
+              </div>
+            </div>
+            <div class="row row-1">
+            <div class="col-sm-1 col-md-1 ">
+              <div class="column column-1">
+                <img src="img/photo5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+              </div>
+              </div>
+            </div>
+            <div id="modalphoto" class="modal-perso">
+              <span class="close-1 cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-inside">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 6</div>
+                    <img src="img/photo1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 6</div>
+                    <img src="img/photo2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 6</div>
+                    <img src="img/photo3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 6</div>
+                    <img src="img/photo4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 6</div>
+                    <img src="img/photo5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 6</div>
+                    <img src="img/photo1.jpg" style="width:100%">
+                </div>
+                
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    
+
+            </div>
+          </div>
+          <div class="col-sm-9 col-md-8 nopadmar">
+             <div class="couv-img">
+              <img src="img/couv.jpg">
+            </div>
+            <div class="couv-cta">
+                <div class="row">
+                <div class="col-sm-2 col-md-5">
+                  <div class="one-word">
+                    <p>46 caractères maximum</p>
+                  </div>
+                </div>
+            <div class="col-sm-10 col-md-7">
+            <div class="btn-group " role="group">
+              <button type="button" class="btn btn-secondary btn-green"><i style="font-size:1em;" class="fa fa-car" aria-hidden="true"></i> Inviter sur un trajet</button>
+              <button type="button" class="btn btn-secondary btn-green"><span style="font-size:1em;" class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span> Ajouter aux favoris</button>
+              <button type="button" class="btn btn-secondary btn-green"><span style="font-size:1em;" class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true"></span> Envoyer un message</button>
+            </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="layout-profile">
+    <div class="container text-center">
+            
+            <div class="col-sm-1 col-md-1 nopadmar">
+              
+            </div>
+            
+        
+        <div class="col-sm-10 col-md-9">
+          
+          
           </div>
           <div class="feature-profile">
           <p>Caractéristiques principales</p>
@@ -194,6 +275,34 @@
                  <td>Niveaux d'études</td>
              </tr>
           </table>
+          <div class="next-trip text-center">
+              <div class="trajet">
+              <table class="table table-condensed">
+              <caption>Prochains trajets</caption>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Départ</th>
+                    <th>Arrivée</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>jj/mm/aaaa</td>
+                    <td>Paris</td>
+                    <td>Bruxelles</td>
+                  </tr>
+                   <tr>
+                    <td>jj/mm/aaaa</td>
+                    <td>Lyon</td>
+                    <td>Marseille</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" class="btn btn-default btn-sm border btn-green">Rejoindre un trajet</button>
+              </div>
+            </div>
+            </div>
           </div>
         </div>
   </div>
@@ -332,26 +441,64 @@
     }
 
     // Get the modal
-var modal = document.getElementById('my-modal');
+    var modal = document.getElementById('my-modal');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('my-profile');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('my-profile');
+    var modalImg = document.getElementById("img01");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
     </script>
+
+    <script>
+function openModal() {
+  document.getElementById('modalphoto').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('modalphoto').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
