@@ -84,17 +84,12 @@
           <div class="col-sm-2 col-md-3 nopadmar">
               <div class="photo-profile">
             <!-- Trigger the Modal -->
-            <img id="my-profile" src="img/avatar_w.jpg">
+            <a href="#"><img src="img/avatar_w.jpg" onclick="openModal();currentSlide(1)"></a>
 
             <!-- The Modal -->
-            <div id="my-modal" class="modal">
+            <div class="modal">
 
-              <!-- The Close Button -->
-              <span class="close" onclick="document.getElementById('my-modal').style.display='none'">&times;</span>
-
-              <!-- Modal Content (The Image) -->
-              <img class="modal-content" id="img01">
-
+              
               
             </div>
               
@@ -139,35 +134,35 @@
             <div class="row row-1">
             <div class="col-sm-1 col-md-1">
               <div class="column column-1">
-                <img src="img/photo1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <a href="#"><img src="img/photo1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"></a>
               </div>
               </div>
             </div>
             <div class="row row-1">
             <div class="col-sm-1 col-md-1 ">
               <div class="column column-1">
-                <img src="img/photo2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <a href="#"><img src="img/photo2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"></a>
               </div>
               </div>
             </div>
             <div class="row row-1">
             <div class="col-sm-1 col-md-1 ">
               <div class="column column-1">
-                <img src="img/photo3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                <a href="#"><img src="img/photo3.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"></a>
               </div>
               </div>
             </div>
             <div class="row row-1">
             <div class="col-sm-1 col-md-1 ">
               <div class="column column-1">
-                <img src="img/photo4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                <a href="#"><img src="img/photo4.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow"></a>
               </div>
               </div>
             </div>
             <div class="row row-1">
             <div class="col-sm-1 col-md-1 ">
               <div class="column column-1">
-                <img src="img/photo5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                <a href="#"><img src="img/photo5.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"></a>
               </div>
               </div>
             </div>
@@ -177,32 +172,32 @@
 
                 <div class="mySlides">
                   <div class="numbertext">1 / 6</div>
-                    <img src="img/photo1.jpg" style="width:100%">
+                    <img src="img/avatar_w.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">2 / 6</div>
-                    <img src="img/photo2.jpg" style="width:100%">
+                    <img src="img/photo1.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">3 / 6</div>
-                    <img src="img/photo3.jpg" style="width:100%">
+                    <img src="img/photo2.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">4 / 6</div>
-                    <img src="img/photo4.jpg" style="width:100%">
+                    <img src="img/photo3.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">5 / 6</div>
-                    <img src="img/photo5.jpg" style="width:100%">
+                    <img src="img/photo4.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides">
                   <div class="numbertext">6 / 6</div>
-                    <img src="img/photo1.jpg" style="width:100%">
+                    <img src="img/photo5.jpg" style="width:100%">
                 </div>
                 
               </div>
@@ -215,96 +210,221 @@
             </div>
           </div>
           <div class="col-sm-9 col-md-8 nopadmar">
-             <div class="couv-img">
-              <img src="img/couv.jpg">
-            </div>
-            <div class="couv-cta">
-                <div class="row">
-                <div class="col-sm-2 col-md-5">
-                  <div class="one-word">
-                    <p>46 caractères maximum</p>
-                  </div>
-                </div>
-            <div class="col-sm-10 col-md-7">
-            <div class="btn-group " role="group">
+             <div class="cov-img">
+              <div class="btn-group cov-btn" role="group">
               <button type="button" class="btn btn-secondary btn-green"><i style="font-size:1em;" class="fa fa-car" aria-hidden="true"></i> Inviter sur un trajet</button>
               <button type="button" class="btn btn-secondary btn-green"><span style="font-size:1em;" class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span> Ajouter aux favoris</button>
               <button type="button" class="btn btn-secondary btn-green"><span style="font-size:1em;" class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true"></span> Envoyer un message</button>
+        </div>
             </div>
-            </div>
-            </div>
-            </div>
+            
           </div>
         </div>
     </div>
   </div>
 
   <div id="layout-profile">
-    <div class="container text-center">
+    <div class="container">
+      <div class="col-sm-2 col-md-3">
+        <div class="next-trip text-center">
+              <p class="w3-center">Mes prochains trajets</p>
+
+          <div class="w3-content w3-display-container">
+            <div class="slideshow">
+                      <table class="table table-striped table-bordered" cellspacing="0">
+                          <thead>
+                            <tr>
+                              <th>Date</th>
+                              <th>Départ</th>
+                              <th>Arrivée</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>jj/mm/aaaa</td>
+                              <td>Paris</td>
+                              <td>Bruxelles</td>
+                            </tr>
+                          </tbody>
+                          <caption><button type="button" class="btn btn-default btn-sm border btn-green">Rejoindre ce trajet</button></caption>
+                        </table>
+              </div>
+              <div class="slideshow">
+                      <table class="table table-striped table-bordered" cellspacing="0">
+                          <thead>
+                            <tr>
+                              <th>Date</th>
+                              <th>Départ</th>
+                              <th>Arrivée</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>jj/mm/aaaa</td>
+                              <td>Bruxelles</td>
+                              <td>Liège</td>
+                            </tr>
+                          </tbody>
+                          <caption><button type="button" class="btn btn-default btn-sm border btn-green">Rejoindre ce trajet</button></caption>
+                        </table>
+              </div>
+              <div class="slideshow">
+                      <table class="table table-striped table-bordered" cellspacing="0">
+                          <thead>
+                            <tr>
+                              <th>Date</th>
+                              <th>Départ</th>
+                              <th>Arrivée</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>jj/mm/aaaa</td>
+                              <td>Liège</td>
+                              <td>Metz</td>
+                            </tr>
+                          </tbody>
+                          <caption><button type="button" class="btn btn-default btn-sm border btn-green">Rejoindre ce trajet</button></caption>
+                        </table>
+              </div>
             
-            <div class="col-sm-1 col-md-1 nopadmar">
-              
-            </div>
+
+            <button class="btn btn-default btn-sm border" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="btn btn-default btn-sm border" onclick="plusDivs(1)">&#10095;</button>
+
+                </div>
+                      </div>    
+                </div>
             
         
         <div class="col-sm-10 col-md-9">
-          
-          
-          </div>
-          <div class="feature-profile">
-          <p>Caractéristiques principales</p>
-          <table>
-             <tr>
-                 <td>Taille</td>
-                 <td>Silhouette</td>
-                 <td>Religion</td>
-                 <td>Yeux</td>
-                 <td>Style vestimentaire</td>
-                 <td>Taille cheveux</td>
-                 <td>Alcool</td>
-                 <td>Profession</td>
-             </tr>
-             <tr>
-                 <td>Yeux</td>
-                 <td>Poids</td>
-                 <td>Nationalité</td>
-                 <td>Autre</td>
-                 <td>Origines ethniques</td>
-                 <td>Couleurs cheveux</td>
-                 <td>Tabac</td>
-                 <td>Niveaux d'études</td>
-             </tr>
-          </table>
-          <div class="next-trip text-center">
-              <div class="trajet">
-              <table class="table table-condensed">
-              <caption>Prochains trajets</caption>
+          <div class="one-word text-center">
+                    <p>Bio / Citation au choix 135 caractères</p>
+        </div>
+          <div class="feature-profile text-center">
+          <table class="table no-spacing" cellspacing="0">
+              <caption>Caractéristiques principales</caption>
                 <thead>
-                  <tr>
-                    <th>Date</th>
-                    <th>Départ</th>
-                    <th>Arrivée</th>
+                  <tr class="custom_centered">
+                    <th colspan="2">Physique</th>
+                    <th colspan="2">Lifestyle / Consommation</th>
+                    <th colspan="2">Etat-civil</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>jj/mm/aaaa</td>
-                    <td>Paris</td>
-                    <td>Bruxelles</td>
+                    <td>Taille</td>
+                    <td>170 cm</td>
+                    <td>Style vestimentaire</td>
+                    <td>Casual chic</td>
+                    <td>Profession</td>
+                    <td>Coiffeuse de chiens</td>
                   </tr>
-                   <tr>
-                    <td>jj/mm/aaaa</td>
-                    <td>Lyon</td>
-                    <td>Marseille</td>
+                  <tr>
+                    <td>Yeux</td>
+                    <td>Bleus</td>
+                    <td>Couleur préférée</td>
+                    <td>Turquoise</td>
+                    <td>Nationalité</td>
+                    <td>Canadienne</td>
+                  </tr>
+                  <tr>
+                    <td>Poids</td>
+                    <td>68 kg</td>
+                    <td>Alcool</td>
+                    <td>Oui</td>
+                    <td>Origines ethniques</td>
+                    <td>Pakistanaise</td>
+                  </tr>
+                  <tr>
+                    <td>Couleur de cheveux</td>
+                    <td>Bruns</td>
+                    <td>Tabac</td>
+                    <td>Non</td>
+                    <td>Niveau d'études</td>
+                    <td>Bac professionnel</td>
+                  </tr>
+                  <tr>
+                    <td>Longueur de cheveux</td>
+                    <td>50 cm</td>
+                    <td>Animal de compagnie</td>
+                    <td>Chien</td>
+                    <td>Religion</td>
+                    <td>Zoroastrisme</td>
+                  </tr>
+                  <tr>
+                    <td>Silhouette</td>
+                    <td>Affinée</td>
+                    <td>Tatouages</td>
+                    <td>Oui</td>
+                    <td>Salaire</td>
+                    <td>Moins de 1.800€/mois</td>
                   </tr>
                 </tbody>
               </table>
-              <button type="button" class="btn btn-default btn-sm border btn-green">Rejoindre un trajet</button>
-              </div>
-            </div>
-            </div>
           </div>
         </div>
+        
+          
+    </div>
+  </div>
+
+  <div id="breaking-free">
+    <div class="container">
+      <div class="col-sm-2 col-md-3">
+      <div class="note text-center">
+        <p>Notation par la communauté</p>
+        <p>Note moyenne : X</p>
+      <table class="table table-hover">
+                <tbody>
+                  <tr>
+                    <td><i class="fa fa-car" aria-hidden="true"></i><i class="fa fa-car" aria-hidden="true"></i><i class="fa fa-car" aria-hidden="true"></i><i class="fa fa-car" aria-hidden="true"></i><i class="fa fa-car" aria-hidden="true"></i></td>
+                    <td>X votes</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-car" aria-hidden="true"></i><i class="fa fa-car" aria-hidden="true"></i><i class="fa fa-car" aria-hidden="true"></i><i class="fa fa-car" aria-hidden="true"></i></td>
+                    <td>X votes</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-car" aria-hidden="true"></i><i class="fa fa-car" aria-hidden="true"></i><i class="fa fa-car" aria-hidden="true"></i></td>
+                    <td>X votes</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-car" aria-hidden="true"></i><i class="fa fa-car" aria-hidden="true"></i></td>
+                    <td>X votes</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-car" aria-hidden="true"></i></td>
+                    <td>X votes</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+      </div>
+      <div class="col-sm-10 col-md-9">
+      <div class="free-speaker">
+      <p>Annonce -- Texte libre</p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="passion">
+  <div class="container">
+      <div class="col-sm-2 col-md-3">
+        <div class="music">
+          <p>Musique</p>
+        </div>
+        <div class="movie">
+          <p>Films/Séries</p>
+        </div>
+      </div>
+      <div class="col-sm-10 col-md-9">
+      <div class="one-life">
+      <p>Personnalité et mode de vie</p>
+      </div>
+      </div>
+  </div>
   </div>
 
   <div id="footer">
@@ -440,65 +560,68 @@
         document.documentElement.scrollTop = 0;
     }
 
-    // Get the modal
-    var modal = document.getElementById('my-modal');
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById('my-profile');
-    var modalImg = document.getElementById("img01");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-      modal.style.display = "none";
-    }
+    
     </script>
 
     <script>
-function openModal() {
-  document.getElementById('modalphoto').style.display = "block";
-}
+    function openModal() {
+      document.getElementById('modalphoto').style.display = "block";
+    }
 
-function closeModal() {
-  document.getElementById('modalphoto').style.display = "none";
-}
+    function closeModal() {
+      document.getElementById('modalphoto').style.display = "none";
+    }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("slideshow");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

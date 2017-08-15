@@ -403,7 +403,7 @@ body {
 }
 
 .perso-profile-border {
-	border: 1px solid grey;
+	border: 1px grey;
 	border-radius: 10px;
 	margin-left: 3.5em;
 }
@@ -425,9 +425,23 @@ body {
 	color : #C70F14;
 }
 
+.cov-img {
+	background-image: url('../img/couv.jpg');
+	background-size: cover;
+	height: 430px;
+  	text-align: center;
+  	color: #fff;
+}
+
+.cov-btn {
+	padding-top: 380px;
+}
+
+/* Couverture pour insertion de l'image depuis html 
+
 .couv-img {
-  background: rgba(25, 0, 0, 0.5);/*visible only in contain mode*/
-  height: 400px;
+  background: rgba(25, 0, 0, 0.5);/*visible only in contain mode
+  height: 430px;
   overflow: hidden;
   position: relative;
   display: block;
@@ -441,11 +455,11 @@ body {
   max-width: 100%;*/
   /*--*/
 
-  /*cover (not work for images wider and shorter than the container):*/
+  /*cover (not work for images wider and shorter than the container):
   min-height: 100%;
   width: 100%;
 
-  /*--*/
+  /*--
 
   position: absolute;
   top: 50%;
@@ -453,48 +467,102 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.couv-cta {
-	background: #fff;
-	height:34px;
-}
+*/
 
 /* Layout-profile section control */
 
 #layout-profile {
-	padding-top: 2px;
+	padding-top: 1px;
 }
 
 .next-trip {
-	height: 200px;
+	height: 300px;
 }
 
-.next-trip caption, th, td {
-	
+.next-trip p {
+	padding-top: 0.2em;
+  	font-weight: 300px;
+  	font-size: 18px;
+  	letter-spacing: 2px;
+  	background-color: #7A2124;
+  	color:#fff;
 }
 
-.trajet {
-	border: 1px solid grey;
+.next-trip caption {
+	caption-side: bottom;
+}
+
+.slideshow {
+	width:100%;
+}
+
+#couv-sub {
+	background-color: #fff;
+}
+
+.one-word {	
+	border: 1px solid black;
 	border-radius: 10px;
-	margin-left: 10px;
-}
-
-
-.one-word {
-	border: 1px solid grey;
-	border-radius: 10px;	
-	padding: 0px 2px ;
-	margin-left: 40px;
+	padding:2px;
 	font-style:italic;
 }
 
-/* Style the Image Used to Trigger the Modal */
-#my-profile {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+.feature-profile {
+	
 }
 
-#my-profile:hover {opacity: 0.7;}
+.feature-profile caption {
+	padding-top: 0.2em;
+  	font-weight: 300px;
+  	font-size: 18px;
+  	letter-spacing: 2px;
+  	color:#7A2124;
+}
+
+tr.custom_centered th {
+  text-align: center;
+}
+
+.feature-profile table{
+  border: 0.5px dotted black;
+}
+.feature-profile table th  {
+  border: 0.5px dotted black; /* Style just to show the table cell boundaries */
+}
+.feature-profile table td  {
+  border: 0.5px dotted black; /* Style just to show the table cell boundaries */
+}
+
+table.no-spacing {
+  border-spacing:0; /* Removes the cell spacing via CSS */
+  border-collapse: collapse;  /* Optional - if you don't want to have double border where cells touch */
+}
+
+/* Breaking-free section control */
+
+.note {
+	overflow-x:auto;
+}
+
+.free-speaker {
+	border: 1px solid black;
+	border-radius: 10px;
+	height: 350px;
+}
+
+/* Passion section control */
+
+.music, .movie {
+	height: 175px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.one-life {
+	border: 1px solid black;
+	border-radius: 10px;
+	height: 350px;
+}
 
 /* The Modal (background) */
 .modal {
@@ -511,38 +579,6 @@ body {
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-/* Modal Content (Image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 40%;
-    max-width: 700px;
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 80px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
 
 .space-photo {
 	height: 97px;
@@ -658,19 +694,10 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-img.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
 img.hover-shadow {
   transition: 0.3s
 }
 
 .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
