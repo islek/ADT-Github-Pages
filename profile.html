@@ -36,23 +36,31 @@
             <img alt="Brand" src="img/logo.jpg">
           </a>
             <p class="navbar-text">SingleCar</p>
-            <button type="button" class="btn btn-default navbar-btn">Rechercher un trajet</button>
-            <button type="button" class="btn btn-default navbar-btn">Proposer un trajet</button>
         </div>
       
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
+              <button type="button" class="btn btn-default navbar-btn">Rechercher un trajet</button>
+              <button type="button" class="btn btn-default navbar-btn">Proposer un trajet</button>
               <button type="button" class="btn btn-default navbar-btn">Rechercher un célibataire</button>
             </li>
             <li>
               <a href="#"> 
-              <i style="font-size:1.5em;" class="fa fa-car" aria-hidden="true"></i> Invitations
+              <span class="glyphicon glyphicon-eye-open" style="font-size:1.5em;"></span> Visites
+              <span class="badge badge-secondary green">11</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"> 
+              <i style="font-size:1.8em;" class="fa fa-car" aria-hidden="true"></i> Invitations
+              <span class="badge badge-secondary green">5</span>
               </a>
             </li>
             <li>
               <a href="#"> 
               <span style="font-size:1.5em;" class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true"></span> Messages
+              <span class="badge badge-secondary green">3</span>
               </a>
             </li>
             <li>
@@ -69,6 +77,8 @@
             <li><a href="#">Tableau de bord</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Mes trajets</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Mes crédits</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Obtenir un pass</a></li>
           </ul>
@@ -229,13 +239,13 @@
     <div class="container">
       <div class="col-sm-2 col-md-3">
         <div class="next-trip text-center">
-              <p class="w3-center">Mes prochains trajets</p>
+              <p class="w3-center">Mes 3 prochains trajets</p>
 
           <div class="w3-content w3-display-container">
             <div class="slideshow">
                       <table class="table table-striped table-bordered" cellspacing="0">
                           <thead>
-                            <tr>
+                            <tr class="custom_centered">
                               <th class="red-dark">Date</th>
                               <th class="red-dark">Départ</th>
                               <th class="red-dark">Arrivée</th>
@@ -254,10 +264,10 @@
               <div class="slideshow">
                       <table class="table table-striped table-bordered" cellspacing="0">
                           <thead>
-                            <tr>
-                              <th>Date</th>
-                              <th>Départ</th>
-                              <th>Arrivée</th>
+                            <tr class="custom_centered">
+                              <th class="red-dark">Date</th>
+                              <th class="red-dark">Départ</th>
+                              <th class="red-dark">Arrivée</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -273,10 +283,10 @@
               <div class="slideshow">
                       <table class="table table-striped table-bordered" cellspacing="0">
                           <thead>
-                            <tr>
-                              <th>Date</th>
-                              <th>Départ</th>
-                              <th>Arrivée</th>
+                            <tr class="custom_centered">
+                              <th class="red-dark">Date</th>
+                              <th class="red-dark">Départ</th>
+                              <th class="red-dark">Arrivée</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -291,54 +301,128 @@
               </div>
             
 
-            <button class="btn btn-default btn-sm border" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="btn btn-default btn-sm border" onclick="plusDivs(1)">&#10095;</button>
-
                 </div>
                       </div>    
 
             <div class="love-target text-center">
-            <p class="w3-center">Ma recherche</p>
-              <table class="table table-hover" cellspacing="0">
+              <p class="w3-center">Ma recherche</p>
+
+          <div class="w3-content w3-display-container">
+            <div class="lovego">
+                      <table class="table" cellspacing="0">
+                          <thead>
+                          <img src="img/noun_789986_cc/noun_789986_cc.png" width="96">
+                          <caption>Son physique</caption>
+                          </thead>
                           <tbody>
                             <tr>
-                              <td>Genre</td>
-                              <td>Homme</td>
-                              <td>Origines</td>
-                              <td>Azerbaidjan</td>
+                              <td>#taille</td>
+                              <td>#genre</td>
                             </tr>
                             <tr>
-                              <td>Taille</td>
-                              <td>180 cm</td>
-                              <td>Profession</td>
-                              <td>Dresseur de Lions</td>
+                              <td>#yeux</td>
+                              <td>#poids</td>
                             </tr>
                             <tr>
-                              <td>Alcool</td>
-                              <td>Non</td>
-                              <td>Tabac</td>
-                              <td>Non</td>
+                              <td>#cheveux</td>
+                              <td>#roux</td>
                             </tr>
                           </tbody>
-                
                         </table>
-                <table class="table table-hover" cellspacing="0">
-                        <tbody>
-                            <td>Qualités</td>
-                              
-                              <td>Défauts</td>
-                             
+              </div>
+              <div class="lovego">
+                      <table class="table" cellspacing="0">
+                          <thead>
+                          <img src="img/noun_670321_cc/noun_670321_cc.png" width="96">
+                          <caption>Sa personnalité</caption>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>#intelligent</td>
+                              <td>#tabac</td>
                             </tr>
                             <tr>
-                              <td>Force / Robuste</td>
-                              
-                              <td>Blagueur / Cérébral</td>
-                              
+                              <td>#alcool</td>
+                              <td>#tatouage</td>
                             </tr>
-                            
+                            <tr>
+                              <td>#couleurpréférée</td>
+                              <td>#honnête</td>
+                            </tr>
                           </tbody>
+                        </table>
+              </div>
+              <div class="lovego">
+                      <table class="table" cellspacing="0">
+                          <thead>
+                          <img src="img/noun_355686_cc/noun_355686_cc.png" width="96">
+                          <caption>Son mode de vie</caption>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>#profession</td>
+                              <td>#originesethniques</td>
+                            </tr>
+                            <tr>
+                              <td>#enfants</td>
+                              <td>#typederelationsouhaitée</td>
+                            </tr>
+                            <tr>
+                              <td>#permis</td>
+                              <td>#animaldecompagnie</td>
+                            </tr>
+                          </tbody>
+                        </table>
+              </div>
+              <div class="lovego">
+                      <table class="table" cellspacing="0">
+                          <thead>
+                          <img src="img/noun_1018316_cc/noun_1018316_cc.png" width="96">
+                          <caption>Ses qualités</caption>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>#gentil</td>
+                              <td>#attentionné</td>
+                            </tr>
+                            <tr>
+                              <td>#attendrissant</td>
+                              <td>#relationnel</td>
+                            </tr>
+                            <tr>
+                              <td>#force</td>
+                              <td>#virilité</td>
+                            </tr>
+                          </tbody>
+                        </table>
+              </div>
+              <div class="lovego">
+                      <table class="table" cellspacing="0">
+                          <thead>
+                          <img src="img/noun_869733_cc/noun_869733_cc.png" width="96">
+                          <caption>Ses défauts</caption>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>#goujat</td>
+                              <td>#macho</td>
+                            </tr>
+                            <tr>
+                              <td>#footix</td>
+                              <td>#bavard</td>
+                            </tr>
+                            <tr>
+                              <td>#geek</td>
+                              <td>#sportif</td>
+                            </tr>
+                          </tbody>
+                        </table>
+              </div>
 
-                        </table>
+            <button class="btn btn-default btn-sm border" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="btn btn-default btn-sm border" onclick="plusDivs(1)">&#10095;</button>
+
+                </div>
             </div>
           </div>
         
@@ -347,7 +431,7 @@
               <h2>Moi en 140 caractères</h2>
               <hr class="style15">
           <div class="one-word text-center">
-                    <p>135 caractères</p>
+                    <p>140 caractères</p>
         </div>
         </div>
           <div class="feature-profile text-center">
@@ -357,8 +441,8 @@
                 <thead>
                   <tr class="custom_centered">
                     <th colspan="2">Physique</th>
-                    <th colspan="2">Lifestyle / Consommation</th>
-                    <th colspan="2">Etat-civil</th>
+                    <th colspan="2">Personnalité</th>
+                    <th colspan="2">Mode de vie</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -407,8 +491,8 @@
                     <td class="font-green">Affinée</td>
                     <td class="font-red">Tatouages</td>
                     <td class="font-green">Oui</td>
-                    <td class="font-red">Salaire</td>
-                    <td class="font-green">Moins de 1.800€/mois</td>
+                    <td class="font-red">Enfant</td>
+                    <td class="font-green">Oui</td>
                   </tr>
                 </tbody>
               </table>
@@ -496,17 +580,52 @@ Fuerit toto in consulatu sine provincia, cui fuerit, antequam designatus est, de
   <div id="passion">
   <div class="container">
       <div class="col-sm-2 col-md-3">
-        <div class="music text-center">
-          <h2>Musique</h2>
-        </div>
-        <div class="movie text-center">
-          <h2>Films/Séries</h2>
+        <div class="car text-center">
+          <h2>Ma voiture</h2>
+          <img src="img/406.jpg" width="96">
+          <table class="table table-hover">
+                <tbody>
+                  <tr>
+                    <td>Modèle</td>
+                    <td>Peugeot 406 break</td>
+                  </tr>
+                  <tr>
+                    <td>Moteur</td>
+                    <td>Essence</td>
+                  </tr>
+                  <tr>
+                    <td>Mise en circulation</td>
+                    <td>1996</td>
+                  </tr>
+                  <tr>
+                    <td>Nombre de places</td>
+                    <td>5 places</td>
+                  </tr>
+                  <tr>
+                    <td>Contrôle Technique</td>
+                    <td>OK</td>
+                  </tr>
+                  <tr>
+                    <td>Capacité coffre</td>
+                    <td>800L</td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
       </div>
       <div class="col-sm-10 col-md-9">
-      <div class="one-life text-center">
-      <h2>Personnalité et mode de vie</h2>
+      <div class="one-life">
+      <h2>Passions et activités</h2>
        <hr class="style15">
+      <p><span class="glyphicon glyphicon-shopping-cart" style="font-size:1.5em;"></span>Goûts alimentaires</p>
+      <p><span class="glyphicon glyphicon-heart" style="font-size:1.5em;"></span>Passions/Loisirs</p>
+      <p><span class="glyphicon glyphicon-flag" style="font-size:1.5em;"></span>Sports</p>
+      <p><span class="glyphicon glyphicon-plane" style="font-size:1.5em;"></span>Voyages</p>
+      <p><span class="glyphicon glyphicon-book" style="font-size:1.5em;"></span>Livres</p>
+      <p><span class="glyphicon glyphicon-music" style="font-size:1.5em;"></span>Musique</p>
+      <p><span class="glyphicon glyphicon-film" style="font-size:1.5em;"></span>Films/Séries</p>
+      <p><span class="glyphicon glyphicon-eye-open" style="font-size:1.5em;"></span>Activités culturelles</p>
+      <p><span class="glyphicon glyphicon-globe" style="font-size:1.5em;"></span>Vie associative</p>
       </div>
       </div>
   </div>
@@ -603,17 +722,17 @@ Fuerit toto in consulatu sine provincia, cui fuerit, antequam designatus est, de
             <p class="app">Téléchargez l'app</p>
             <ul class="list-inline social text-center">
               <li>
-                <a> 
+                <a href="#"> 
                 <i class="fa fa-apple fa-2x" aria-hidden="true"></i> 
                 </a>
               </li>
               <li>
-                <a> 
+                <a href="#"> 
                 <i class="fa fa-android fa-2x" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a> 
+                <a href="#"> 
                 <i class="fa fa-windows fa-2x" aria-hidden="true"></i>
                 </a>
               </li>
@@ -693,6 +812,23 @@ Fuerit toto in consulatu sine provincia, cui fuerit, antequam designatus est, de
 
 
     <script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slideshow");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1} 
+        x[slideIndex-1].style.display = "block"; 
+        setTimeout(carousel, 4000); // Change image every 4 seconds
+    }
+    </script>
+
+    <script>
     var slideIndex = 1;
     showDivs(slideIndex);
 
@@ -702,7 +838,7 @@ Fuerit toto in consulatu sine provincia, cui fuerit, antequam designatus est, de
 
     function showDivs(n) {
       var i;
-      var x = document.getElementsByClassName("slideshow");
+      var x = document.getElementsByClassName("lovego");
       if (n > x.length) {slideIndex = 1}    
       if (n < 1) {slideIndex = x.length}
       for (i = 0; i < x.length; i++) {

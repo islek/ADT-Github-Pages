@@ -508,7 +508,7 @@ hr.style15:after {
 }
 
 .next-trip {
-	
+	height:190px;
 	padding-top: 0.8em;
 }
 
@@ -523,6 +523,7 @@ hr.style15:after {
 
 .next-trip caption {
 	caption-side: bottom;
+	padding-top: 1em;
 }
 
 .slideshow {
@@ -531,10 +532,27 @@ hr.style15:after {
 
 .couv-sub {
 	background-color: #F9F9F9;
+	height:150px;
 }
 
 .love-target {
 
+}
+
+.lovego {
+	width:100%;
+	padding-top:0.9em;
+}
+
+
+.lovego td {
+	color:#19937F;
+}
+
+.love-target caption {
+	caption-side: top;
+	font-weight:bold;
+	padding-bottom:0.8em;
 }
 
 .love-target p {
@@ -548,6 +566,7 @@ hr.style15:after {
 
 .one-word {	
 	padding:2px;
+	font-size:20px;
 	font-style:italic;
 }
 
@@ -618,11 +637,11 @@ table.no-spacing {
 
 /* Passion section control */
 
-.music, .movie {
+.car {
 	height: 175px;
 }
 
-.music h2, .movie h2 {	
+.car h2 {	
 	
   	font-weight: 300px;
   	font-size: 18px;
@@ -632,7 +651,7 @@ table.no-spacing {
 }
 
 .one-life {
-	height: 350px;
+	height: 390px;
 	background-color: #F9F9F9;
 }
 
