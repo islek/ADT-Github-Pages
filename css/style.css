@@ -121,6 +121,21 @@ body {
 	color : #217A39;
 }
 
+hr.style15 {
+	border-top: 4px double #C70F14;
+	text-align: center;
+}
+hr.style15:after {
+	content: '\002665';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #217A39;
+	color: #C70F14;
+	font-size: 18px;
+}
+
 /* Container control */
 
 .container {
@@ -364,6 +379,16 @@ body {
 
 /* profile.html */
 
+/* Navbar profile */
+
+.sak-eud-din {
+	font-size:1.5em;
+}
+
+.saquer-eddin {
+	font-size:1.8em;
+}
+
 /* Couv section control */
 
 #couv {
@@ -398,6 +423,21 @@ body {
   transform: translate(-50%, -50%);
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
 .status {
 	height: 50px;
 	padding: 2% 1%;
@@ -425,15 +465,6 @@ body {
 	margin-left: 3.5em;
 }
 
-.progress {
-	margin-top: 0.3em;
-}
-
-.progress-bar {
-	width: 100%;
-	height: 100%;
-}
-
 .online, .check {
 	color : #217A39;
 }
@@ -442,246 +473,13 @@ body {
 	color : #C70F14;
 }
 
-.cov-img {
-	background-image: url('../img/couv.jpg');
-	background-size: cover;
-	height: 430px;
-  	text-align: center;
-  	color: #fff;
+.progress {
+	margin-top: 0.3em;
 }
 
-.cov-btn {
-	padding-top: 380px;
-}
-
-/* Couverture pour insertion de l'image depuis html 
-
-.couv-img {
-  background: rgba(25, 0, 0, 0.5);/*visible only in contain mode
-  height: 430px;
-  overflow: hidden;
-  position: relative;
-  display: block;
-}
-
-.couv-img img {
-  display: block;
-
-  /*contain:*/
-  /*max-height: 100%;
-  max-width: 100%;*/
-  /*--*/
-
-  /*cover (not work for images wider and shorter than the container):
-  min-height: 100%;
-  width: 100%;
-
-  /*--
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-*/
-
-/* Layout-profile section control */
-
-#layout-profile {
-	padding-top: 1px;
-}
-
-hr.style15 {
-	border-top: 4px double #C70F14;
-	text-align: center;
-}
-hr.style15:after {
-	content: '\002665';
-	display: inline-block;
-	position: relative;
-	top: -15px;
-	padding: 0 10px;
-	background: #217A39;
-	color: #C70F14;
-	font-size: 18px;
-}
-
-.next-trip {
-	height:190px;
-	padding-top: 0.8em;
-}
-
-.next-trip p {
-	padding-top: 0.2em;
-  	font-weight: 300px;
-  	font-size: 18px;
-  	letter-spacing: 2px;
-  	background-color: #fff;
-  	color:#217A39;
-}
-
-.next-trip caption {
-	caption-side: bottom;
-	padding-top: 1em;
-}
-
-.slideshow {
-	width:100%;
-}
-
-.couv-sub {
-	background-color: #F9F9F9;
-	height:150px;
-}
-
-.love-target {
-
-}
-
-.lovego {
-	width:100%;
-	padding-top:0.9em;
-}
-
-
-.lovego td {
-	color:#19937F;
-}
-
-.love-target caption {
-	caption-side: top;
-	font-weight:bold;
-	padding-bottom:0.8em;
-}
-
-.love-target p {
-	padding-top: 0.2em;
-  	font-weight: 300px;
-  	font-size: 18px;
-  	letter-spacing: 2px;
-  	background-color: #fff;
-  	color:#217A39;
-}
-
-.one-word {	
-	padding:2px;
-	font-size:20px;
-	font-style:italic;
-}
-
-.couv-sub h2 {	
-	
-  	font-weight: 300px;
-  	font-size: 18px;
-  	letter-spacing: 2px;
-  	background-color: #fff;
-  	color:#7A2124;
-}
-
-.feature-profile {
-	background-color: #F9F9F9;
-}
-
-.feature-profile h2 {
-	padding-top: 0.2em;
-  	font-weight: 300px;
-  	font-size: 18px;
-  	letter-spacing: 2px;
-  	background-color: #fff;
-  	color:#7A2124;
-}
-
-tr.custom_centered th {
-  text-align: center;
-}
-
-table.no-spacing {
-  border-spacing:0; /* Removes the cell spacing via CSS */
-  border-collapse: collapse;  /* Optional - if you don't want to have double border where cells touch */
-}
-
-/* Breaking-free section control */
-
-.note {
-	overflow-x:auto;
-}
-
-.note h2 {	
-	
-  	font-weight: 300px;
-  	font-size: 18px;
-  	letter-spacing: 2px;
-  	background-color: #fff;
-  	color:#217A39;
-}
-
-.free-speaker {
-	height: 350px;
-	background-color: #F9F9F9;
-}
-
-.free-speaker h2 {	
-	
-  	font-weight: 300px;
-  	font-size: 18px;
-  	letter-spacing: 2px;
-  	background-color: #fff;
-  	color:#7A2124;
-}
-
-.fixed-scroll {
-	height:280px;
-   overflow:auto
-}
-
-/* Passion section control */
-
-.car {
-	height: 175px;
-}
-
-.car h2 {	
-	
-  	font-weight: 300px;
-  	font-size: 18px;
-  	letter-spacing: 2px;
-  	background-color: #fff;
-  	color:#217A39;
-}
-
-.one-life {
-	height: 390px;
-	background-color: #F9F9F9;
-}
-
-.one-life h2 {
-	padding-top: 0.2em;
-  	font-weight: 300px;
-  	font-size: 18px;
-  	letter-spacing: 2px;
-  	background-color: #fff;
-  	color:#7A2124;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-
-.space-photo {
-	height: 97px;
+.progress-bar {
+	width: 100%;
+	height: 100%;
 }
 
 .row-1 > .column-1 {
@@ -692,11 +490,6 @@ table.no-spacing {
   content: "";
   display: table;
   clear: both;
-}
-
-.column-1 {
-  
-
 }
 
 .column-1 img {
@@ -802,6 +595,216 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
+.cov-img {
+	background-image: url('../img/couv.jpg');
+	background-size: cover;
+	height: 430px;
+  	text-align: center;
+  	color: #fff;
+}
+
+.cov-btn {
+	padding-top: 380px;
+}
+
+/* Couverture pour insertion de l'image depuis html 
+
+.couv-img {
+  background: rgba(25, 0, 0, 0.5);/*visible only in contain mode
+  height: 430px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.couv-img img {
+  display: block;
+
+  /*contain:*/
+  /*max-height: 100%;
+  max-width: 100%;*/
+  /*--*/
+
+  /*cover (not work for images wider and shorter than the container):
+  min-height: 100%;
+  width: 100%;
+
+  /*--
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+*/
+
+/* Layout-profile section control */
+
+#layout-profile {
+	padding-top: 1px;
+}
+
+.next-trip {
+	height:190px;
+	padding-top: 0.8em;
+}
+
+.next-trip p {
+	padding-top: 0.2em;
+  	font-weight: 300px;
+  	font-size: 18px;
+  	letter-spacing: 2px;
+  	background-color: #fff;
+  	color:#217A39;
+}
+
+.next-trip caption {
+	caption-side: bottom;
+	padding-top: 1em;
+}
+
+.slideshow {
+	width:100%;
+}
+
+.lovego {
+	width:100%;
+	padding-top:0.9em;
+}
+
+.lovego td {
+	color:#19937F;
+}
+
+.love-target caption {
+	caption-side: top;
+	font-weight:bold;
+	padding-bottom:0.8em;
+}
+
+.love-target p {
+	padding-top: 0.2em;
+  	font-weight: 300px;
+  	font-size: 18px;
+  	letter-spacing: 2px;
+  	background-color: #fff;
+  	color:#217A39;
+}
+
+.couv-sub {
+	background-color: #F9F9F9;
+	height:150px;
+}
+
+.one-word {	
+	padding:2px;
+	font-size:20px;
+	font-style:italic;
+}
+
+.couv-sub h2 {	
+  	font-weight: 300px;
+  	font-size: 18px;
+  	letter-spacing: 2px;
+  	background-color: #fff;
+  	color:#7A2124;
+}
+
+.feature-profile {
+	background-color: #F9F9F9;
+}
+
+.feature-profile h2 {
+	padding-top: 0.2em;
+  	font-weight: 300px;
+  	font-size: 18px;
+  	letter-spacing: 2px;
+  	background-color: #fff;
+  	color:#7A2124;
+}
+
+tr.custom_centered th {
+  text-align: center;
+}
+
+table.no-spacing {
+  border-spacing:0; /* Removes the cell spacing via CSS */
+  border-collapse: collapse;  /* Optional - if you don't want to have double border where cells touch */
+}
+
+/* Breaking-free section control */
+
+.note {
+	overflow-x:auto;
+}
+
+.note h2 {	
+  	font-weight: 300px;
+  	font-size: 18px;
+  	letter-spacing: 2px;
+  	background-color: #fff;
+  	color:#217A39;
+}
+
+.note i {
+	color:#19937F;
+}
+
+.free-speaker {
+	height: 350px;
+	background-color: #F9F9F9;
+}
+
+.free-speaker h2 {	
+	
+  	font-weight: 300px;
+  	font-size: 18px;
+  	letter-spacing: 2px;
+  	background-color: #fff;
+  	color:#7A2124;
+}
+
+.fixed-scroll {
+	height:280px;
+   overflow:auto
+}
+
+/* Passion section control */
+
+.car {
+	height: 175px;
+}
+
+.car h2 {	
+	
+  	font-weight: 300px;
+  	font-size: 18px;
+  	letter-spacing: 2px;
+  	background-color: #fff;
+  	color:#217A39;
+}
+
+.one-life {
+	height: 390px;
+	background-color: #F9F9F9;
+}
+
+.one-life h2 {
+	padding-top: 0.2em;
+  	font-weight: 300px;
+  	font-size: 18px;
+  	letter-spacing: 2px;
+  	background-color: #fff;
+  	color:#7A2124;
+  	text-align: center;
+}
+
+.a-nous-guifes {
+	font-size:1.5em;
+	color:#19937F;
+}
+
 /* Report button */
 
 .report {
@@ -825,5 +828,6 @@ img.hover-shadow {
 }
 .footer-report {
 	padding-bottom: 60px;
+	padding-top: 35px;
 }
 
