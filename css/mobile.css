@@ -1,6 +1,7 @@
 body {
 	padding-top: 60px;
 	background-color: #fff;
+	overflow-x:hidden;
 }
 
 /* Navbar design elements */
@@ -165,10 +166,10 @@ hr.style15:after {
 .wrapper{
 	background-image: url('../img/cover.jpg');
 	background-size: cover;
-	height: 750px;
-	padding-top: 150px;
-  	text-align: center;
-  	color: #fff;
+	height: 650px;
+	padding-top: 50px;
+  text-align: center;
+  color: #fff;
 }
 
 .border {
@@ -176,7 +177,7 @@ hr.style15:after {
 }
 
 .lead h1 {
-  font-size: 70px;
+  font-size: 40px;
   text-shadow: 0 0 20px rgba(0, 0, 0, .8);
   font-weight: normal;
 }
@@ -185,7 +186,7 @@ hr.style15:after {
   background: rgba(25, 0, 0, 0.8);
   display: inline-block;
   padding: 0.2em;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 300px;
   letter-spacing: 2px;
   margin-bottom: 4em;
@@ -195,7 +196,7 @@ hr.style15:after {
   text-shadow: 0 0 20px rgba(0, 0, 0, .8);
   font-weight: normal;
   padding: 0.2em;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 300px;
   letter-spacing: 2px;
 }
@@ -207,7 +208,7 @@ hr.style15:after {
 /* Home page profiles control */
 
 .profile0 {
-	background-color: #7A2124;
+	  background-color: #7A2124;
   	color:#fff;
   	padding-bottom: 0.2em;
   	margin-bottom: 1.3em;
@@ -216,7 +217,7 @@ hr.style15:after {
 .profile0 h3 {
   	display: inline-block;
   	padding: 0.2em;
-  	font-size: 28px;
+  	font-size: 20px;
   	font-weight: 300px;
   	letter-spacing: 2px;
   	background-color: #7A2124;
@@ -230,7 +231,7 @@ hr.style15:after {
 .avatar {
   opacity: 1;
   display: block;
-  width: 100%;
+  width: 50%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
@@ -279,7 +280,7 @@ hr.style15:after {
 .pitch h3 {
   	display: inline-block;
   	padding: 0.2em;
-  	font-size: 28px;
+  	font-size: 20px;
   	font-weight: 300px;
   	letter-spacing: 2px;
 }
@@ -295,9 +296,9 @@ hr.style15:after {
 	background-image: url('../img/panorama.jpg');
 	background-size: cover;
 	height: 75%;
-  	text-align: center;
-  	color: #fff;
-  	margin-top: 1.6em;
+  text-align: center;
+  color: #fff;
+  margin-top: 1.6em;
 }
 
 #panorama h3 {
@@ -305,6 +306,7 @@ hr.style15:after {
   padding: 0.2em;
   letter-spacing: 2px;
   margin-bottom: 4em;
+  font-size: 20px;
 }
 
 .cachan p {
@@ -333,7 +335,7 @@ hr.style15:after {
 .layout-blog h3 {
   	display: inline-block;
   	padding: 0.2em;
-  	font-size: 28px;
+  	font-size: 20px;
   	font-weight: 300px;
   	letter-spacing: 2px;
 }
@@ -345,18 +347,13 @@ hr.style15:after {
 }
 
 .back-white h4 {
-	font-size:1.8em;
+	font-size:18px;
 	font-weight: bold;
 }
 
 .back-white img {
-	width:390px;
-}
-
-.back-white p {
-	font-size:0.8em;
-	text-align: justify;
-	padding-top: 10px;
+	width:120px;
+  margin-bottom: 5px;
 }
 
 .col-container {
