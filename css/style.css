@@ -350,7 +350,12 @@ hr.style15:after {
 }
 
 .back-white img {
-	width:390px;
+  opacity: 1;
+  display: inline;
+  width: 70%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
 .back-white p {
