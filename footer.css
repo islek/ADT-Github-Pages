@@ -1,0 +1,15 @@
+/* Footer section control */
+
+#footer a {
+	color: #19937F;
+}
+
+#footer p {
+	font-size: 1.5em;
+	font-style: bold;
+	text-align: center;
+}
+
+#footer img {
+	display: center;
+}

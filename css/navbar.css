@@ -1,0 +1,30 @@
+/* Navbar design elements */
+
+.navbar-btn {
+  	background-color: #217A39;
+  	border-color: #217A39;
+  	color : #fff;
+}
+
+.navbar-btn:hover {
+  	background-color: #C70F14;
+  	border-color: #C70F14;
+  	color: #fff ;
+}
+
+.navbar-header p {
+	font-family: 'Arial';
+	font-size: 22px;
+	color: yellow;
+}
+
+/* How to override the default Bootstrap navbar */
+
+.navbar-transparent {
+  background-color: #fff;
+}
+
+.navbar-transparent .navbar-brand,
+.navbar-transparent .navbar-nav > li > a {
+  color: #C70F14;
+}
