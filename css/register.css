@@ -1,31 +1,10 @@
 /* register.html */
 
-/* Affix style control */
-
- .affix {
-      top: 20px;
-      z-index: 9999 !important;
-  }
-
-  #section1 {color: #fff; background-color: #1E88E5;}
-  #section2 {color: #fff; background-color: #673ab7;}
-  #section3 {color: #fff; background-color: #ff9800;}
-  #section4 {color: #fff; background-color: #00bcd4;}
-  #section5 {color: #fff; background-color: #009688;}
-  #section6 {color: #fff; background-color: #009688;}
-  #section7 {color: #fff; background-color: #009688;}
-  #section8 {color: #fff; background-color: #009688;}
-
-.step1 > h3, .step2 > h3, #step-3 > h3, #step-4 > h3, #step-5 > h3 {
+.step1 > h3, .step2 > h3, .step3 > h3, .step4 > h3, .step5 > h3, .step6 > h3, .step7 > h3, .step8 > h3 {
   color:#ffffff;
   background: #217A39;
   padding: 0.2em;
   letter-spacing: 2px;
-}
-
-#step-1, #step-2, #step-3, #step-4, #step-5 {
-  
-  padding: 1em;
 }
 
   .wizard {
@@ -48,7 +27,7 @@
     height: 2px;
     background: #e0e0e0;
     position: absolute;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -82,11 +61,11 @@ span.round-tab i{
 }
 .wizard li.active span.round-tab {
     background: #fff;
-    border: 2px solid #5bc0de;
+    border: 2px solid #19937F;
     
 }
 .wizard li.active span.round-tab i{
-    color: #5bc0de;
+    color: #19937F;
 }
 
 span.round-tab:hover {
@@ -95,7 +74,7 @@ span.round-tab:hover {
 }
 
 .wizard .nav-tabs > li {
-    width: 25%;
+    width: 10%;
 }
 
 .wizard li:after {
@@ -106,7 +85,7 @@ span.round-tab:hover {
     margin: 0 auto;
     bottom: 0px;
     border: 5px solid transparent;
-    border-bottom-color: #5bc0de;
+    border-bottom-color: #19937F;
     transition: 0.1s ease-in-out;
 }
 
@@ -117,8 +96,8 @@ span.round-tab:hover {
     opacity: 1;
     margin: 0 auto;
     bottom: 0px;
-    border: 10px solid transparent;
-    border-bottom-color: #5bc0de;
+    border: 4px solid transparent;
+    border-bottom-color: #19937F;
 }
 
 .wizard .nav-tabs > li a {
