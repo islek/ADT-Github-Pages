@@ -6,6 +6,10 @@
 @import url("footer.css");
 
 body {
+	background-color: #fff;
+}
+
+#body-nav-fixed {
 	padding-top: 60px;
 	background-color: #fff;
 }
