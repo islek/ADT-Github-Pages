@@ -18,8 +18,13 @@
   letter-spacing: 2px;
 }
 
-#main-form {
-  margin-bottom: 0.5em;
+.prog-110 {
+  text-align: center;
+  font-size: 1.5em;
+  color:#fff;
+  border-color: #fff;
+  padding: 0.2em;
+  letter-spacing: 2px;
 }
 
 .step1 span, .step2 span, .step3 span, .step4 span, .step5 span, .step6 span, .step7 span, .step8 span {
@@ -152,12 +157,14 @@ span.round-tab:hover {
     border :1px solid #eee;
     border-radius:5px;
     padding:10px;
+    background-color: #ccc;
 }
 .step33 {
     border:1px solid #ccc;
     border-radius:5px;
     padding-left:10px;
     margin-bottom:10px;
+    background-color: #ccc;
 }
 .dropselectsec {
     width: 68%;
